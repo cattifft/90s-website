@@ -1,0 +1,241 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: rgba(255, 176, 197, 0.588);
+}
+
+#quote {
+    color: rgb(15, 164, 178);
+    background-color: rgba(255, 239, 213, 0.359);
+    text-align: center;
+    width: 85vw;
+}
+
+#intro {
+    color: rgb(61, 33, 131);
+    text-align: center;
+}
+
+h1 {
+    color: rgb(61, 33, 131);
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.6rem;
+}
+
+h3, h2 {
+    color: rgb(15, 164, 178);
+    background-color: rgba(184, 75, 144, 0.134);
+    text-align: center;
+    padding-left: 5px;
+}
+
+.footer {
+    text-align: center;
+}
+
+/* CONTACT */
+#dk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dk img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-form {
+    color: rgb(38, 168, 177);
+    background-color: rgba(255, 239, 213, 0.359);
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+
+
+/* overwriting buttons */
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+    background-color: rgb(189, 23, 125);
+    border: 2px dashed rgb(38, 168, 177);
+    color: rgb(38, 168, 177);
+}
+
+/* BLOG */
+.blog-post {
+    color:rgb(44, 25, 96);
+    background-color: rgba(255, 239, 213, 0.43);
+    padding-bottom: 10px;
+}
+
+.blog-post h3 {
+    color: rgb(15, 164, 178);
+    text-align: left;
+}
+
+.blog-post p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* ABOUT ME */
+.bio {
+    align-items: center;
+    color: rgb(61, 33, 131);
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-right: 0;
+    width: 55vw;
+}
+
+#me {
+    border-radius: 0px;
+}
+
+#gallery {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    width: 85vw;
+}
+
+.gallery img {
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.gallerycol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 15vw;
+}
+
+@media screen and (max-width: 400px) {
+    .bio {
+        width: 85vw;
+    }
+}
+
+/* GALLERY */
+.art-desc {
+    color: rgb(61, 33, 131);
+    text-align: center;
+    width: 85vw;
+    padding-top: 2.5rem;
+    padding-right: 0;
+}
+
+.gallery-paintings {
+    width: 85vw;
+    display: flex;
+    padding-top: 5rem;
+}
+
+#art-content {
+    justify-content: center;
+    align-items: center;
+}
+
+/* NAV BAR */
+.nav-bar {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: rgb(189, 23, 125);
+    text-decoration: none;
+    /* font-size: 16px; */
+    padding: 10px;
+    /* display: block; */
+}
+
+@media screen and (max-width: 400px) {
+    .nav-links {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .nav-links a {
+        display: block;
+        padding: 5px;
+        text-align: center;
+        background-color: rgba(255, 239, 213, 0.631);
+    }
+}
+
+/* HOME */
+#nav-table {
+    text-align: center;
+    border: 1px solid rgba(255, 176, 197, 0.588);
+    color: rgb(15, 164, 178);
+    width: 100%;
+    border-collapse: collapse;
+    padding-top: 20px;
+}
+
+#nav-table td {
+    border: 1px solid rgba(255, 176, 197, 0.588);
+    background-color: rgba(255, 239, 213, 0.359);
+}
+
+.sidebar {
+    h2, h3 {
+        font-size: 2.8rem;
+    }
+    margin-inline: 2rem;
+    align-content: center;
+    background-color: rgba(255, 239, 213, 0.43);
+    ul {
+        list-style-type: "★";
+        padding-left: 10px;
+    }
+    li::marker {
+        color: rgb(23, 132, 142);
+    }
+    p {
+        padding-left: 10px;
+    }
+    img {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #nav-table {
+        border:0;
+    }
+    #nav-table tr {
+        display: block;
+    }
+    #nav-table td {
+        display: block;
+        position: relative;
+    }
+}

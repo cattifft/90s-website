@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="milligram.css" type="text/css">
+    <link rel="stylesheet" href="custom.css" type="text/css">
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <section class="row">
+        <nav class="nav-bar">
+            <div class="column column-100 medium-column-50 large-column-33">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="gallery/galleryLanding.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <h1 class="title">Contact Me!</h1>
+
+    <main class="container">
+        <!-- Contact Form -->
+        <form action="mailto:ctifft1928@gmail.com" method="get">
+            <table class="contact-form">
+                <!-- Name Field -->
+                <tr>
+                    <td><label for="name">Your Name:</label></td>
+                    <td><input type="text" id="name" name="name" size="30" required></td>
+                </tr>
+                <!-- Email Field -->
+                <tr>
+                    <td><label for="email">Your Email:</label></td>
+                    <td><input type="email" id="email" name="email" size="30" required></td>
+                </tr>
+                <!-- Subject Field -->
+                <tr>
+                    <td><label for="subject">Subject:</label></td>
+                    <td><input type="text" id="subject" name="subject" size="30" required></td>
+                </tr>
+                <!-- Message Field -->
+                <tr>
+                    <td><label for="message">Message:</label></td>
+                    <td><textarea id="message" name="body" rows="5" cols="30" required></textarea></td>
+                </tr>
+                <!-- Submit Button -->
+                <tr>
+                    <td colspan="2">
+                        <input aria-label="Submit Contact Form" type="submit" value="Send Message">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <div id="dk">
+            <img src="images/congragulations.jpg" alt="Donkey Kong">
+        </div>
+
+        <!-- Footer -->
+        <p class="footer">
+            <a href="index.html">Back to Home</a>
+        </p>
+    </main>
+
+</body>
+</html>
